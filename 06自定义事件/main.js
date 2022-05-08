@@ -4,8 +4,10 @@ Vue.config.productionTip = false
 new Vue({
     el: '#app',
     render: h => h(App),
-    beforeCreate() {
-        Vue.prototype.$bus = this   //安装全局事件总线
-    },
+    // mounted() {
+    //     setTimeout(() => {
+    //         this.$destroy();
+    //     }, 3000);
+    // },
 
 })
